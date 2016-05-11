@@ -1,0 +1,5 @@
+# Lint対象から外すファイル
+excluded: 
+- Pods
+
+line_length: 200
