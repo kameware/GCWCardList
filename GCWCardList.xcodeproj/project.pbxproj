@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88A0F193C0CBB37754066021 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A1EFC1CF419FCFD507FC72 /* Pods.framework */; };
 		8969176E1CD659DC00084EA7 /* CardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8969176D1CD659DC00084EA7 /* CardListViewController.swift */; };
 		896917721CD65BE500084EA7 /* CardListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896917711CD65BE500084EA7 /* CardListViewController.storyboard */; };
 		896917741CD6612B00084EA7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896917731CD6612B00084EA7 /* Card.swift */; };
@@ -21,6 +20,14 @@
 		89BA31451CE0D2EC005CACC0 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BA31441CE0D2EC005CACC0 /* FilterViewController.swift */; };
 		89BA31471CE0D2FC005CACC0 /* FilterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BA31461CE0D2FC005CACC0 /* FilterViewController.storyboard */; };
 		89BA314A1CE22A13005CACC0 /* GCWUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BA31491CE22A13005CACC0 /* GCWUtils.swift */; };
+		89E19F191CE7871A00D70C9C /* TestPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E19F181CE7871A00D70C9C /* TestPlayViewController.xib */; };
+		89E19F1C1CEB559900D70C9C /* UnitFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F1B1CEB559900D70C9C /* UnitFieldView.swift */; };
+		89E19F1E1CEB60E000D70C9C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F1D1CEB60E000D70C9C /* CardView.swift */; };
+		89E19F201CEB60EA00D70C9C /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E19F1F1CEB60EA00D70C9C /* CardView.xib */; };
+		89E19F221CEB62BF00D70C9C /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F211CEB62BF00D70C9C /* DeckView.swift */; };
+		89E19F241CEB6BCB00D70C9C /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F231CEB6BCB00D70C9C /* Deck.swift */; };
+		89E19F261CEB6F6600D70C9C /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F251CEB6F6600D70C9C /* DeckViewController.swift */; };
+		89E19F281CEB6F7200D70C9C /* DeckViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E19F271CEB6F7200D70C9C /* DeckViewController.storyboard */; };
 		89E301171CD25BAB0052AB63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E301161CD25BAB0052AB63 /* AppDelegate.swift */; };
 		89E301191CD25BAB0052AB63 /* ExpantionMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E301181CD25BAB0052AB63 /* ExpantionMenuViewController.swift */; };
 		89E3011B1CD25BAB0052AB63 /* DeckMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E3011A1CD25BAB0052AB63 /* DeckMenuViewController.swift */; };
@@ -32,6 +39,10 @@
 		89E3014A1CD263DC0052AB63 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E301491CD263DC0052AB63 /* MainTabController.swift */; };
 		89E3014C1CD4E8770052AB63 /* ExpantionMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E3014B1CD4E8770052AB63 /* ExpantionMenuViewController.storyboard */; };
 		89E3014E1CD4E8B40052AB63 /* DeckMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E3014D1CD4E8B40052AB63 /* DeckMenuViewController.storyboard */; };
+		89F5AD1F1CE768C00091E398 /* TestPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5AD1E1CE768C00091E398 /* TestPlayViewController.swift */; };
+		8ED1D66F0BAA25EFF29A2787 /* Pods_GCWCardList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC5C0DAF5AE505CA31A1851 /* Pods_GCWCardList.framework */; };
+		BEF5DCBE2B0ECABB298EB7D2 /* Pods_GCWCardListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B880CD2045BED1FE9A3051 /* Pods_GCWCardListTests.framework */; };
+		FBE592514BDBDE3876EB4E8F /* Pods_GCWCardListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1224951D9B8120C7BE1BF9A2 /* Pods_GCWCardListUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3375DB8BE268F5294C245690 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1224951D9B8120C7BE1BF9A2 /* Pods_GCWCardListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCWCardListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B880CD2045BED1FE9A3051 /* Pods_GCWCardListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCWCardListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC5C0DAF5AE505CA31A1851 /* Pods_GCWCardList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCWCardList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8969176D1CD659DC00084EA7 /* CardListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardListViewController.swift; sourceTree = "<group>"; };
 		896917711CD65BE500084EA7 /* CardListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CardListViewController.storyboard; sourceTree = "<group>"; };
 		896917731CD6612B00084EA7 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -66,6 +79,14 @@
 		89BA31441CE0D2EC005CACC0 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		89BA31461CE0D2FC005CACC0 /* FilterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FilterViewController.storyboard; sourceTree = "<group>"; };
 		89BA31491CE22A13005CACC0 /* GCWUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCWUtils.swift; sourceTree = "<group>"; };
+		89E19F181CE7871A00D70C9C /* TestPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPlayViewController.xib; sourceTree = "<group>"; };
+		89E19F1B1CEB559900D70C9C /* UnitFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitFieldView.swift; sourceTree = "<group>"; };
+		89E19F1D1CEB60E000D70C9C /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		89E19F1F1CEB60EA00D70C9C /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		89E19F211CEB62BF00D70C9C /* DeckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		89E19F231CEB6BCB00D70C9C /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		89E19F251CEB6F6600D70C9C /* DeckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		89E19F271CEB6F7200D70C9C /* DeckViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeckViewController.storyboard; sourceTree = "<group>"; };
 		89E301131CD25BAB0052AB63 /* GCWCardList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCWCardList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E301161CD25BAB0052AB63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E301181CD25BAB0052AB63 /* ExpantionMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpantionMenuViewController.swift; path = ../../ExpantionMenuViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +104,15 @@
 		89E301491CD263DC0052AB63 /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		89E3014B1CD4E8770052AB63 /* ExpantionMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpantionMenuViewController.storyboard; sourceTree = "<group>"; };
 		89E3014D1CD4E8B40052AB63 /* DeckMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DeckMenuViewController.storyboard; sourceTree = "<group>"; };
+		89F5AD1E1CE768C00091E398 /* TestPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlayViewController.swift; sourceTree = "<group>"; };
+		89F9BFBF1CE4DAA90054E45E /* GCWCardList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCWCardList-Bridging-Header.h"; sourceTree = "<group>"; };
 		B4A1EFC1CF419FCFD507FC72 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D43618D07B05D633165D3415 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C4630AE88541891B88A5F265 /* Pods-GCWCardList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCWCardList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCWCardList/Pods-GCWCardList.debug.xcconfig"; sourceTree = "<group>"; };
+		C6D00E4070A7E8F1C7388929 /* Pods-GCWCardList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCWCardList.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCWCardList/Pods-GCWCardList.release.xcconfig"; sourceTree = "<group>"; };
+		D1B60F01E514BABD6344FD14 /* Pods-GCWCardListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCWCardListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCWCardListTests/Pods-GCWCardListTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF0FEF769E0874E91A7DC89F /* Pods-GCWCardListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCWCardListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCWCardListTests/Pods-GCWCardListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF39400836EB9E656C85A669 /* Pods-GCWCardListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCWCardListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GCWCardListUITests/Pods-GCWCardListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCFC1495002B261B402ED906 /* Pods-GCWCardListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCWCardListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GCWCardListUITests/Pods-GCWCardListUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A0F193C0CBB37754066021 /* Pods.framework in Frameworks */,
+				8ED1D66F0BAA25EFF29A2787 /* Pods_GCWCardList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF5DCBE2B0ECABB298EB7D2 /* Pods_GCWCardListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,17 +136,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE592514BDBDE3876EB4E8F /* Pods_GCWCardListUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E268BFA92FE85E5706FEB08 /* Pods */ = {
+		3CE23E5237A5069CA1A2A89E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3375DB8BE268F5294C245690 /* Pods.debug.xcconfig */,
-				D43618D07B05D633165D3415 /* Pods.release.xcconfig */,
+				C4630AE88541891B88A5F265 /* Pods-GCWCardList.debug.xcconfig */,
+				C6D00E4070A7E8F1C7388929 /* Pods-GCWCardList.release.xcconfig */,
+				DF0FEF769E0874E91A7DC89F /* Pods-GCWCardListTests.debug.xcconfig */,
+				D1B60F01E514BABD6344FD14 /* Pods-GCWCardListTests.release.xcconfig */,
+				EF39400836EB9E656C85A669 /* Pods-GCWCardListUITests.debug.xcconfig */,
+				FCFC1495002B261B402ED906 /* Pods-GCWCardListUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -126,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				B4A1EFC1CF419FCFD507FC72 /* Pods.framework */,
+				7FC5C0DAF5AE505CA31A1851 /* Pods_GCWCardList.framework */,
+				28B880CD2045BED1FE9A3051 /* Pods_GCWCardListTests.framework */,
+				1224951D9B8120C7BE1BF9A2 /* Pods_GCWCardListUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,8 +209,18 @@
 			children = (
 				89A0FCE01CD5F3FB00BB573F /* Expantion.swift */,
 				896917731CD6612B00084EA7 /* Card.swift */,
+				89E19F231CEB6BCB00D70C9C /* Deck.swift */,
 			);
 			path = realm;
+			sourceTree = "<group>";
+		};
+		89AAC9871CE4D3F600A046D0 /* TestPlay */ = {
+			isa = PBXGroup;
+			children = (
+				89F5AD1E1CE768C00091E398 /* TestPlayViewController.swift */,
+				89E19F181CE7871A00D70C9C /* TestPlayViewController.xib */,
+			);
+			path = TestPlay;
 			sourceTree = "<group>";
 		};
 		89AAE8201CD5105300F7AD81 /* API */ = {
@@ -201,6 +248,17 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		89E19F1A1CEB554600D70C9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89E19F1B1CEB559900D70C9C /* UnitFieldView.swift */,
+				89E19F1D1CEB60E000D70C9C /* CardView.swift */,
+				89E19F1F1CEB60EA00D70C9C /* CardView.xib */,
+				89E19F211CEB62BF00D70C9C /* DeckView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		89E3010A1CD25BAB0052AB63 = {
 			isa = PBXGroup;
 			children = (
@@ -208,8 +266,8 @@
 				89E3012C1CD25BAB0052AB63 /* GCWCardListTests */,
 				89E301371CD25BAC0052AB63 /* GCWCardListUITests */,
 				89E301141CD25BAB0052AB63 /* Products */,
-				2E268BFA92FE85E5706FEB08 /* Pods */,
 				68A84E990D9DD6A745D95D74 /* Frameworks */,
+				3CE23E5237A5069CA1A2A89E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,10 +290,11 @@
 				89AAE8201CD5105300F7AD81 /* API */,
 				8969177C1CD8603C00084EA7 /* Cell */,
 				89E301471CD263010052AB63 /* Controller */,
+				89E19F1A1CEB554600D70C9C /* View */,
 				89A0FCDF1CD5F39B00BB573F /* realm */,
 				896917751CD7A80E00084EA7 /* resouce */,
 				89E301211CD25BAB0052AB63 /* LaunchScreen.storyboard */,
-				89E301241CD25BAB0052AB63 /* Info.plist */,
+				89F9BFBE1CE4DA040054E45E /* Support Files */,
 			);
 			path = GCWCardList;
 			sourceTree = "<group>";
@@ -263,6 +322,8 @@
 			children = (
 				89E3011A1CD25BAB0052AB63 /* DeckMenuViewController.swift */,
 				89E3014D1CD4E8B40052AB63 /* DeckMenuViewController.storyboard */,
+				89E19F251CEB6F6600D70C9C /* DeckViewController.swift */,
+				89E19F271CEB6F7200D70C9C /* DeckViewController.storyboard */,
 			);
 			path = Deck;
 			sourceTree = "<group>";
@@ -276,6 +337,7 @@
 				89E301461CD262F30052AB63 /* Deck */,
 				89E301481CD263480052AB63 /* Expantion */,
 				89BA31431CE0D293005CACC0 /* Filter */,
+				89AAC9871CE4D3F600A046D0 /* TestPlay */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,6 +351,15 @@
 			path = Expantion;
 			sourceTree = "<group>";
 		};
+		89F9BFBE1CE4DA040054E45E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89E301241CD25BAB0052AB63 /* Info.plist */,
+				89F9BFBF1CE4DAA90054E45E /* GCWCardList-Bridging-Header.h */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,13 +367,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89E3013D1CD25BAC0052AB63 /* Build configuration list for PBXNativeTarget "GCWCardList" */;
 			buildPhases = (
-				1FD6F96642BF42142CC90743 /* Check Pods Manifest.lock */,
+				FD9CC241FC55F54CE236BF76 /* 📦 Check Pods Manifest.lock */,
 				89E3010F1CD25BAB0052AB63 /* Sources */,
 				89E301101CD25BAB0052AB63 /* Frameworks */,
 				89E301111CD25BAB0052AB63 /* Resources */,
-				4B95DA515369F62B620D19E0 /* Embed Pods Frameworks */,
-				163B21976E55D4BCFBF2A967 /* Copy Pods Resources */,
 				89AAE8231CD5119200F7AD81 /* ShellScript */,
+				7C1F38E32EB51FCA2AB5AB35 /* 📦 Embed Pods Frameworks */,
+				A73586ADFC139F31FC60BFD8 /* 📦 Copy Pods Resources */,
+				BC9549125C83F41B79236E9F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,9 +389,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89E301401CD25BAC0052AB63 /* Build configuration list for PBXNativeTarget "GCWCardListTests" */;
 			buildPhases = (
+				2860FF5BEFEB75698715EBAD /* 📦 Check Pods Manifest.lock */,
 				89E301251CD25BAB0052AB63 /* Sources */,
 				89E301261CD25BAB0052AB63 /* Frameworks */,
 				89E301271CD25BAB0052AB63 /* Resources */,
+				6961496C732230DF1B1028CB /* 📦 Embed Pods Frameworks */,
+				334E20BDFAC0397DB52E4F83 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,9 +410,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89E301431CD25BAC0052AB63 /* Build configuration list for PBXNativeTarget "GCWCardListUITests" */;
 			buildPhases = (
+				EFDA07B9607C0C8F7B441A3C /* 📦 Check Pods Manifest.lock */,
 				89E301301CD25BAC0052AB63 /* Sources */,
 				89E301311CD25BAC0052AB63 /* Frameworks */,
 				89E301321CD25BAC0052AB63 /* Resources */,
+				5D2BF6795B29CEC1BA434342 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,9 +480,12 @@
 				89E301231CD25BAB0052AB63 /* LaunchScreen.storyboard in Resources */,
 				896917721CD65BE500084EA7 /* CardListViewController.storyboard in Resources */,
 				89E301201CD25BAB0052AB63 /* Assets.xcassets in Resources */,
+				89E19F191CE7871A00D70C9C /* TestPlayViewController.xib in Resources */,
 				89E3014E1CD4E8B40052AB63 /* DeckMenuViewController.storyboard in Resources */,
 				89E3011E1CD25BAB0052AB63 /* Main.storyboard in Resources */,
+				89E19F281CEB6F7200D70C9C /* DeckViewController.storyboard in Resources */,
 				89E3014C1CD4E8770052AB63 /* ExpantionMenuViewController.storyboard in Resources */,
+				89E19F201CEB60EA00D70C9C /* CardView.xib in Resources */,
 				8969177B1CD85D7B00084EA7 /* CardDetailViewController.storyboard in Resources */,
 				89BA31471CE0D2FC005CACC0 /* FilterViewController.storyboard in Resources */,
 				896917771CD7A8CD00084EA7 /* Icon.xcassets in Resources */,
@@ -429,29 +509,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		163B21976E55D4BCFBF2A967 /* Copy Pods Resources */ = {
+		2860FF5BEFEB75698715EBAD /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1FD6F96642BF42142CC90743 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,19 +524,64 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4B95DA515369F62B620D19E0 /* Embed Pods Frameworks */ = {
+		334E20BDFAC0397DB52E4F83 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCWCardListTests/Pods-GCWCardListTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2BF6795B29CEC1BA434342 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCWCardListUITests/Pods-GCWCardListUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6961496C732230DF1B1028CB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCWCardListTests/Pods-GCWCardListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1F38E32EB51FCA2AB5AB35 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCWCardList/Pods-GCWCardList-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		89AAE8231CD5119200F7AD81 /* ShellScript */ = {
@@ -487,6 +597,66 @@
 			shellPath = /bin/sh;
 			shellScript = "";
 		};
+		A73586ADFC139F31FC60BFD8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCWCardList/Pods-GCWCardList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9549125C83F41B79236E9F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GCWCardList/Pods-GCWCardList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDA07B9607C0C8F7B441A3C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD9CC241FC55F54CE236BF76 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -494,6 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E19F241CEB6BCB00D70C9C /* Deck.swift in Sources */,
 				89E3011B1CD25BAB0052AB63 /* DeckMenuViewController.swift in Sources */,
 				89E301171CD25BAB0052AB63 /* AppDelegate.swift in Sources */,
 				89986C0F1CDF89CE008C000F /* URLConst.swift in Sources */,
@@ -502,10 +673,15 @@
 				89AAE8221CD510E600F7AD81 /* APIManager.swift in Sources */,
 				896917791CD85D6E00084EA7 /* CardDetailViewController.swift in Sources */,
 				89BA31451CE0D2EC005CACC0 /* FilterViewController.swift in Sources */,
+				89E19F261CEB6F6600D70C9C /* DeckViewController.swift in Sources */,
 				89E3014A1CD263DC0052AB63 /* MainTabController.swift in Sources */,
+				89E19F1C1CEB559900D70C9C /* UnitFieldView.swift in Sources */,
 				89E301191CD25BAB0052AB63 /* ExpantionMenuViewController.swift in Sources */,
 				8969176E1CD659DC00084EA7 /* CardListViewController.swift in Sources */,
 				8969177E1CD8604B00084EA7 /* CardCollectionViewCell.swift in Sources */,
+				89F5AD1F1CE768C00091E398 /* TestPlayViewController.swift in Sources */,
+				89E19F1E1CEB60E000D70C9C /* CardView.swift in Sources */,
+				89E19F221CEB62BF00D70C9C /* DeckView.swift in Sources */,
 				896917741CD6612B00084EA7 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,32 +825,40 @@
 		};
 		89E3013E1CD25BAC0052AB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3375DB8BE268F5294C245690 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C4630AE88541891B88A5F265 /* Pods-GCWCardList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GCWCardList/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/GCWCardList/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mine.GCWCardList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GCWCardList/Support Files/GCWCardList-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		89E3013F1CD25BAC0052AB63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D43618D07B05D633165D3415 /* Pods.release.xcconfig */;
+			baseConfigurationReference = C6D00E4070A7E8F1C7388929 /* Pods-GCWCardList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GCWCardList/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/GCWCardList/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mine.GCWCardList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GCWCardList/Support Files/GCWCardList-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		89E301411CD25BAC0052AB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0FEF769E0874E91A7DC89F /* Pods-GCWCardListTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GCWCardListTests/Info.plist;
@@ -687,6 +871,7 @@
 		};
 		89E301421CD25BAC0052AB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B60F01E514BABD6344FD14 /* Pods-GCWCardListTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GCWCardListTests/Info.plist;
@@ -699,6 +884,7 @@
 		};
 		89E301441CD25BAC0052AB63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF39400836EB9E656C85A669 /* Pods-GCWCardListUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GCWCardListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -710,6 +896,7 @@
 		};
 		89E301451CD25BAC0052AB63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFC1495002B261B402ED906 /* Pods-GCWCardListUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GCWCardListUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

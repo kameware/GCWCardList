@@ -33,7 +33,7 @@ class CardListViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         // ナビゲーションバーにボタン追加
-        let filterButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: "showFilterView:")
+        let filterButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(CardListViewController.showFilterView))
         self.navigationItem.setRightBarButtonItem(filterButton, animated: false)
 
     }

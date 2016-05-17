@@ -36,6 +36,14 @@ class MainTabController: UITabBarController {
         let deckNavigationViewController: UINavigationController = UINavigationController(rootViewController: deckMenuViewController)
         deckNavigationViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Favorites, tag: 2)
         viewControllers.append(deckNavigationViewController)
+        
+        // テストプレイ
+//        let testPlayStoryBoard = UIStoryboard(name: "TestPlayViewController", bundle: nil)
+//        let testPlayViewController = testPlayStoryBoard.instantiateViewControllerWithIdentifier("TestPlayViewController")
+        let testPlayViewController = TestPlayViewController()
+        let testplayNavigationViewController = UINavigationController(rootViewController: testPlayViewController)
+        testPlayViewController.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Bookmarks, tag: 3)
+        viewControllers.append(testplayNavigationViewController)
 
         self.setViewControllers(viewControllers, animated: false)
 
