@@ -20,6 +20,8 @@
 		89BA31451CE0D2EC005CACC0 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BA31441CE0D2EC005CACC0 /* FilterViewController.swift */; };
 		89BA31471CE0D2FC005CACC0 /* FilterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89BA31461CE0D2FC005CACC0 /* FilterViewController.storyboard */; };
 		89BA314A1CE22A13005CACC0 /* GCWUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BA31491CE22A13005CACC0 /* GCWUtils.swift */; };
+		89CDB1C61CEC960900E02FB7 /* DeckSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CDB1C51CEC960900E02FB7 /* DeckSectionHeaderView.swift */; };
+		89CDB1C81CEC961600E02FB7 /* DeckSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB1C71CEC961600E02FB7 /* DeckSectionHeaderView.xib */; };
 		89E19F191CE7871A00D70C9C /* TestPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E19F181CE7871A00D70C9C /* TestPlayViewController.xib */; };
 		89E19F1C1CEB559900D70C9C /* UnitFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F1B1CEB559900D70C9C /* UnitFieldView.swift */; };
 		89E19F1E1CEB60E000D70C9C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E19F1D1CEB60E000D70C9C /* CardView.swift */; };
@@ -79,6 +81,8 @@
 		89BA31441CE0D2EC005CACC0 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		89BA31461CE0D2FC005CACC0 /* FilterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FilterViewController.storyboard; sourceTree = "<group>"; };
 		89BA31491CE22A13005CACC0 /* GCWUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCWUtils.swift; sourceTree = "<group>"; };
+		89CDB1C51CEC960900E02FB7 /* DeckSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckSectionHeaderView.swift; sourceTree = "<group>"; };
+		89CDB1C71CEC961600E02FB7 /* DeckSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeckSectionHeaderView.xib; sourceTree = "<group>"; };
 		89E19F181CE7871A00D70C9C /* TestPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPlayViewController.xib; sourceTree = "<group>"; };
 		89E19F1B1CEB559900D70C9C /* UnitFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitFieldView.swift; sourceTree = "<group>"; };
 		89E19F1D1CEB60E000D70C9C /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 				89E19F1D1CEB60E000D70C9C /* CardView.swift */,
 				89E19F1F1CEB60EA00D70C9C /* CardView.xib */,
 				89E19F211CEB62BF00D70C9C /* DeckView.swift */,
+				89CDB1C51CEC960900E02FB7 /* DeckSectionHeaderView.swift */,
+				89CDB1C71CEC961600E02FB7 /* DeckSectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -482,6 +488,7 @@
 				89E301201CD25BAB0052AB63 /* Assets.xcassets in Resources */,
 				89E19F191CE7871A00D70C9C /* TestPlayViewController.xib in Resources */,
 				89E3014E1CD4E8B40052AB63 /* DeckMenuViewController.storyboard in Resources */,
+				89CDB1C81CEC961600E02FB7 /* DeckSectionHeaderView.xib in Resources */,
 				89E3011E1CD25BAB0052AB63 /* Main.storyboard in Resources */,
 				89E19F281CEB6F7200D70C9C /* DeckViewController.storyboard in Resources */,
 				89E3014C1CD4E8770052AB63 /* ExpantionMenuViewController.storyboard in Resources */,
@@ -674,6 +681,7 @@
 				896917791CD85D6E00084EA7 /* CardDetailViewController.swift in Sources */,
 				89BA31451CE0D2EC005CACC0 /* FilterViewController.swift in Sources */,
 				89E19F261CEB6F6600D70C9C /* DeckViewController.swift in Sources */,
+				89CDB1C61CEC960900E02FB7 /* DeckSectionHeaderView.swift in Sources */,
 				89E3014A1CD263DC0052AB63 /* MainTabController.swift in Sources */,
 				89E19F1C1CEB559900D70C9C /* UnitFieldView.swift in Sources */,
 				89E301191CD25BAB0052AB63 /* ExpantionMenuViewController.swift in Sources */,

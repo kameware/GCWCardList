@@ -9,6 +9,9 @@
 import UIKit
 import RealmSwift
 
+let CardDetailViewControllerStoryboardName = "CardDetailViewController"
+let CardDetailViewControllerIdentifier = "CardDetailViewController"
+
 class CardDetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var cardCollectionView: UICollectionView!

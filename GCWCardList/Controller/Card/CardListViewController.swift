@@ -10,14 +10,24 @@ import UIKit
 import RealmSwift
 import SDWebImage
 
+let CardListViewControllerStoryboardName = "CardListViewController"
+let CardListViewControllerIdentifier = "CardListViewController"
+
 class CardListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     
+    /// パック情報
     var expantion: Expantion!
+    /// カードリスト
     var cardList : Results<Card>!
+    /// 検索フラグ
     var filterFlg: Bool = false
+    /// デッキ情報 ある場合はカード追加
+    var deck: Deck!
+    /// true:MSデッキ, false:クルーデッキ
+    var msFlg = true;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,18 +101,59 @@ class CardListViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-    // MARK: UITableView Delegate
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        if deck != nil {
+            let oneAction = UITableViewRowAction(style: .Normal, title: "1", handler: { (action, indexPath) in
+                self.addCard(indexPath, count: 1)
+            })
+            let twoAction = UITableViewRowAction(style: .Normal, title: "2", handler: { (action, indexPath) in
+                self.addCard(indexPath, count: 2)
+            })
+            let threeAction = UITableViewRowAction(style: .Normal, title: "3", handler: { (action, indexPath) in
+                self.addCard(indexPath, count: 3)
+            })
+            let fourAction = UITableViewRowAction(style: .Normal, title: "4", handler: { (action, indexPath) in
+                self.addCard(indexPath, count: 4)
+            })
+            return [oneAction, twoAction, threeAction, fourAction]
+        }
+        return nil
+    }
+    
+    // MARK: UITableViewDataSource
     // セル選択時
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // CardDetailViewControllerの生成
-        let storyboard = UIStoryboard(name: "CardDetailViewController", bundle: nil)
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("CardDetailViewController") as! CardDetailViewController
-        // パラメータセット
-        viewController.cardList = cardList
-        viewController.selectedIndex = indexPath.row
-        
-        // 遷移
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if self.deck != nil {
+            let realm = try! Realm()
+            // デッキ追加
+            if msFlg {
+                // MSデッキに追加
+                try! realm.write{
+                    deck.msDeck.append(cardList[indexPath.row])
+                }
+            } else {
+                // クルーデッキに追加
+                try! realm.write{
+                    deck.crewDeck.append(cardList[indexPath.row])
+                }
+            }
+            self.navigationController?.popViewControllerAnimated(true)
+        } else {
+            // カードリスト
+            // CardDetailViewControllerの生成
+            let storyboard = UIStoryboard(name: CardDetailViewControllerStoryboardName, bundle: nil)
+            let viewController = storyboard.instantiateViewControllerWithIdentifier(CardDetailViewControllerIdentifier) as! CardDetailViewController
+            // パラメータセット
+            viewController.cardList = cardList
+            viewController.selectedIndex = indexPath.row
+            
+            // 遷移
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
     // MARK: UIPopoverPresentationControllerDelegate
@@ -215,6 +266,24 @@ class CardListViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         return cardText
+    }
+    
+    func addCard(indexPath: NSIndexPath, count: Int) {
+        let card = self.cardList[indexPath.row]
+        
+        let realm = try! Realm()
+        for _ in 0..<count {
+            if msFlg {
+                try! realm.write({
+                    self.deck.msDeck.append(card)
+                })
+            } else {
+                try! realm.write({
+                    self.deck.crewDeck.append(card)
+                })
+            }
+        }
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
 }

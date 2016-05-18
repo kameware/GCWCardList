@@ -13,7 +13,8 @@ class Deck: Object {
     
     dynamic var id   = 0
     dynamic var name = ""
-    var cards        = List<Card>()
+    var msDeck       = List<Card>()
+    var crewDeck     = List<Card>()
     
     override static func primaryKey() -> String? {
         return "id"
